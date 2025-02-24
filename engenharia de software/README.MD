@@ -5,3 +5,12 @@
  # Atividade 2
 
 >no segundo trecho do livro é discutido mais a fundo o tópico já citado anteriormente com algumas reflexões como: o que fazer para perpetuar um código por mais tempo, como torna-lo mais sustentável? é necessário que tanto a organização como os engenheiros tenham isso em mente para construir algo que seja adptavel as mudanças, com um custo baixo e que tradeoffs precisarão ser realizadas
+
+ # Atividade 3
+ ## exemplos de tradeoffs
+
+1°  custo x tempo - um código mais detalhado demora mais tempo e é mais caro, pórem prolonga sua vida últil e facilita para outros devs
+
+2° funcionalidade x simplicidade -  adicionar muitas funcionalidades pode deixar o sistema confuso e mais dificil de manter pórem um design simples pode não ter os recursos necessários para alguns usuários
+
+3° portabilidade x desempenho - usar linguagens de alto nível torna mais fácil a construção do código pórem se perde o desempenho que as linguagens de baixo nível possuem
