@@ -9,7 +9,7 @@
 > 
 >Unlike those more established engineering professions, current software engineering theory or practice is not nearly as rigorous. Aeronautical engineers must follow rigid guidelines and practices, because errors in their calculations can cause real damage; programming, on the whole, has traditionally not followed such rigorous practices. But, as software becomes more integrated into our lives, we must adopt and rely on more rigorous engineering methods. We hope this book helps others see a path toward more reliable software practices.
 
-**Comemtário:** no primeiro trecho começamos com o questionamento do que seria de fato a engenharia de software e o que distingue ela da ciência da computação. O termo engenharia soa como algo sério e carrega consigo a ideia de construir algo tangivel, o que distoa da engenharia de software que constroi coisas não tão concretas assim, além disso pelo fato de não ser uma profissão regulamentada ela acaba não seguindo regras tão rigorosas, diferentes das outras engenharias onde normalmente as diretrizes são mais rigidas pois erros nos calculos podem causar grandes danos, é importante destacar também que os cursos na área de tecnologia como a engenharia já citada, ciência da computação e outros possuem diversas áreas de atuação e precisam de costantes atualizações pois as coisas nesse ramo costumam ficar obsoletas mais rápido do que em outros, por fim a maior diferença entre as duas está no fato de que enquanto um progrador foca em escrever um código funcional com base em requisitos específicos, o engenheiro de software projeta, desenvolve e o mais importante, mantem aquele sistema funcional e otmizado.
+**Comentário:** no primeiro trecho começamos com o questionamento do que seria de fato a engenharia de software e o que distingue ela da ciência da computação. O termo engenharia soa como algo sério e carrega consigo a ideia de construir algo tangivel, o que distoa da engenharia de software que constroi coisas não tão concretas assim, além disso pelo fato de não ser uma profissão regulamentada ela acaba não seguindo regras tão rigorosas, diferentes das outras engenharias onde normalmente as diretrizes são mais rigidas pois erros nos calculos podem causar grandes danos, é importante destacar também que os cursos na área de tecnologia como a engenharia já citada, ciência da computação e outros possuem diversas áreas de atuação e precisam de costantes atualizações pois as coisas nesse ramo costumam ficar obsoletas mais rápido do que em outros, por fim a maior diferença entre as duas está no fato de que enquanto um progrador foca em escrever um código funcional com base em requisitos específicos, o engenheiro de software projeta, desenvolve e o mais importante, mantém aquele sistema funcional e otmizado.
 
  # Atividade 2
   ## Comentar o segundo trecho do livro Software Engineering at Google, Oreilly
@@ -48,3 +48,63 @@
 
  # Atividade 5
  ## Java
+
+'''
+import java.util.ArrayList;
+import java.util.List;
+
+class Livro {
+    private String nome;
+    private String autor;
+    private int codigo;
+
+    public Livro(String nome, String autor, int codigo) {
+        this.nome = nome;
+        this.autor = autor;
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "nome='" + nome + '\'' +
+                ", autor='" + autor + '\'' +
+                ", codigo=" + codigo +
+                '}';
+    }
+}
+
+class Biblioteca {
+    private List<Livro> livros;
+
+    public Biblioteca() {
+        this.livros = new ArrayList<>();
+    }
+
+    public void addLivro(Livro livro) {
+        livros.add(livro);
+    }
+
+    public Livro buscarLivros(int codigo) {
+        for (Livro livro : livros) {
+            if (livro.getCodigo() == codigo) {
+                return livro;
+            }
+        }
+        return null;
+    }
+}
+'''
+
