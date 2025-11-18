@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.2.1/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="icon">🎬</span>
+                    Minha Biblioteca de Filmes
+                </h1>
+                <p class="subtitle">Cadastre e organize seus filmes favoritos</p>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <h2 class="form-title">Adicionar Novo Filme</h2>
+            <form id="movieForm" class="movie-form">
+                <div class="form-group">
+                    <label for="movieTitle">Título do Filme</label>
+                    <input 
+                        type="text" 
+                        id="movieTitle" 
+                        class="form-input" 
+                        placeholder="Ex: O Poderoso Chefão" 
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="movieGenre">Gênero</label>
+                    <select id="movieGenre" class="form-input" required>
+                        <option value="">Selecione um gênero</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Comédia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Ficção Científica">Ficção Científica</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Animação">Animação</option>
+                        <option value="Documentário">Documentário</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="movieYear">Ano de Lançamento</label>
+                        <input 
+                            type="number" 
+                            id="movieYear" 
+                            class="form-input" 
+                            placeholder="Ex: 2020" 
+                            min="1888" 
+                            max="2030"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="movieRating">Avaliação (1-5)</label>
+                        <input 
+                            type="number" 
+                            id="movieRating" 
+                            class="form-input" 
+                            placeholder="1 a 5" 
+                            min="1" 
+                            max="5"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>➕</span> Adicionar Filme
+                </button>
+            </form>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-number" id="totalMovies">0</span>
+                <span class="stat-label">Total de Filmes</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="avgRating">0.0</span>
+                <span class="stat-label">Avaliação Média</span>
+            </div>
+        </div>
+
+        <div class="movies-container">
+            <h2 class="section-title">Meus Filmes</h2>
+            <div id="moviesList" class="movies-grid">
+                <!-- Filmes serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
