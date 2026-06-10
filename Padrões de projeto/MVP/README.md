@@ -1,6 +1,6 @@
-# MVP - Delivery com 3 Padroes de Projeto
+# MVP - Sistema de entrega com 3 Padroes de Projeto
 
-Este MVP simula um pedido de delivery usando os tres padroes do repositorio:
+Este MVP simula um pedido usando os tres padroes do repositorio:
 
 - **Composite**: `Produto` e `Combo` implementam `ItemPedido`, permitindo montar um carrinho com itens simples e combos aninhados.
 - **Strategy**: `Pedido` usa `PagamentoStrategy` para alternar a forma de pagamento entre `PagamentoPix` e `PagamentoCartao`.
