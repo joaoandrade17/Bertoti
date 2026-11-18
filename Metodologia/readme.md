@@ -1,8 +1,16 @@
-# João Vitor Andrade
+<div align="center">
 
 ## Sobre mim
 
-Atualmente estou cursando Tecnólogo em Banco de Dados na Fatec São José dos Campos e estagiando na área de infraestrutura
+<img src="./assets/foto-perfil.webp" alt="Foto de João Vitor Andrade" width="200">
+
+</div>
+
+Meu nome é João Vitor Andrade, sou estudante de Banco de Dados na Fatec São José dos Campos e atualmente estou no quinto semestre do curso.
+
+Ao longo do curso, atuei como desenvolvedor e como Scrum Master nos projetos integradores, o que me permitiu desenvolver tanto habilidades técnicas, como modelagem de banco de dados e documentação de software, quanto a organização e a condução de equipes com metodologias ágeis.
+
+Atualmente, faço estágio na Cebrace, atuando na área de infraestrutura, tendo contato com servidores e bancos de dados.
 
 ## Contato
 
